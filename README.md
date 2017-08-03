@@ -1,1 +1,1 @@
-# YarikPugach.github.io
+# YarikPugach
