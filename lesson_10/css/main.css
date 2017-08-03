@@ -1,0 +1,81 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.section .section-content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f49f23), to(#f8c14c));
+  background: linear-gradient(to top, #f49f23, #f8c14c);
+}
+.section .header {
+  text-align: center;
+}
+.section .header .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.section .header .nav {
+  display: inline-block;
+  margin: 30px 0 40px 0;
+}
+.section .header .nav ul {
+  list-style: none;
+  background-color: #232323;
+  margin-left: 130px;
+}
+.section .header .nav ul li {
+  display: inline-block;
+}
+.section .header .nav ul li a {
+  display: block;
+  color: #f8be48;
+  text-decoration: none;
+  padding: 31px 15px;
+}
+.section .header .nav ul li a:hover {
+  background-color: #565656;
+  color: #f87548;
+}
+.section .text-header {
+  margin-top: 5px;
+  background-color: #f9c984;
+}
+.section .text-header h1 {
+  text-align: center;
+  font-size: 25.2px;
+  color: #505050;
+  padding: 20px 0;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.section .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.section .content .item {
+  display: inline-block;
+  margin: 40px 15px 0 0;
+  -webkit-box-shadow: 0 0 10px #505050;
+          box-shadow: 0 0 10px #505050;
+}
+.section .content .item .photo-item {
+  display: inline-block;
+  width: 104px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.section .content .item .text-item {
+  display: inline-block;
+  width: 140px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  border-left: 2px dotted #838383;
+  height: 75px;
+}
+.section .content .item .text-item a {
+  vertical-align: middle;
+  color: #505050;
+}

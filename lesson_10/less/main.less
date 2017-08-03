@@ -1,0 +1,99 @@
+@bg1: #f49f23;
+@bg2: #f8c14c;
+@bg-nav: #232323;
+@font-nav: #f8be48;
+@fz: 18px;
+@text-color:#505050;
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: @fz;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+.section {	
+		
+	.section-content {
+		background: linear-gradient(to top, @bg1, @bg2);
+
+	}		
+		.header {
+			text-align: center;
+			.logo {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.nav {
+				display: inline-block;		
+				margin: 30px 0 40px 0;
+
+				ul {
+					list-style: none;
+					background-color: @bg-nav;
+					margin-left: 130px;
+					
+					li {				
+						display: inline-block;				
+						a {
+							display: block;
+							color: @font-nav;
+							text-decoration: none;
+							padding: 31px 15px;
+							&:hover {
+								background-color: lighten(@bg-nav, 20%);
+								color: spin(@font-nav, -25%);
+							}
+						}
+					}
+				}
+			}
+		}
+		.text-header {
+			margin-top: 5px;
+			background-color: lighten(@bg1, 20%);
+			h1{
+				text-align: center;
+				font-size: @fz*1.4;
+				color: @text-color;
+				padding: 20px 0;
+				text-transform: uppercase;
+				margin-bottom: 50px;
+			}			
+		}
+	}
+
+	.section {
+
+		.content {
+			width: 80%;
+			margin: 0 auto;
+			.item {
+				display: inline-block;
+				margin: 40px 15px 0 0;
+				box-shadow: 0 0 10px @text-color;
+				.photo-item {
+					display: inline-block;
+					width: 104px;
+					vertical-align: middle;
+					background-color: #fff;
+
+				}
+				.text-item{
+					display: inline-block;
+					width: 140px;
+					background-color: #e5e5e5;
+					vertical-align: middle;
+					border-left: 2px dotted lighten(@text-color, 20%);
+					height: 75px;
+
+					a {
+					vertical-align: middle;
+					color: @text-color;	
+					}
+				}				
+			}
+		}
+	}
