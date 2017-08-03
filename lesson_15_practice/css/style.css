@@ -1,0 +1,189 @@
+/* fonts family */
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('..//fonts/ProximaNova-Bold.eot');
+  src: url('..//fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('..//fonts/ProximaNova-Bold.woff2') format('woff2'), url('..//fonts/ProximaNova-Bold.woff') format('woff'), url('..//fonts/ProximaNova-Bold.ttf') format('truetype'), url('..//fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('..//fonts/ProximaNova-Regular.eot');
+  src: url('..//fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('..//fonts/ProximaNova-Regular.woff2') format('woff2'), url('..//fonts/ProximaNova-Regular.woff') format('woff'), url('..//fonts/ProximaNova-Regular.ttf') format('truetype'), url('..//fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Colors */
+/* basic settings */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #fcb303;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
+}
+/* Typography */
+section {
+  padding: 10rem 0;
+}
+/* main */
+.main {
+  padding: 3rem 0 5rem;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+  /*Подзаголовок*/
+  /*Зеленый ярлык*/
+  /*оплата по факту*/
+  /*Главная форма*/
+}
+.main-content {
+  margin-top: 10rem;
+  /*Главный заголовок*/
+}
+.main-content h1 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  line-height: 1.45;
+  font-family: 'ProximaNovaBold';
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem;
+  font-size: 1.8em;
+  color: #ffffff;
+  background-color: #46b714;
+  text-align: center;
+  /*Цифра "300" рублей*/
+}
+.main span strong {
+  font-size: 3rem;
+  font-family: 'ProximaNovaBold';
+}
+.main-trigger {
+  display: block;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNovaBold';
+}
+.main-form {
+  padding: 4rem 5rem;
+  background-color: #ffffff;
+  text-align: center;
+  /*Заголовок формы*/
+  /*поле для ввода*/
+  /*подписи к полям*/
+  /*Подпись под кнопкой*/
+  /*Подпись под кнопкой*/
+}
+.main-form-header {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+.main-form-header strong {
+  font-size: 1.9rem;
+}
+.main-form-input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+}
+.main-form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.main-form-btn {
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.6rem;
+}
+.main-form small {
+  display: block;
+  margin-top: 1.5rem;
+}
+.header {
+  height: 7rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-link {
+  display: inline-block;
+  font-family: 'ProximaNovaBold';
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #1a1820;
+}
+@media (max-width: 991px) {
+  .phone-block {
+    text-align: center;
+  }
+  .main {
+    background-position: center right;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+}
