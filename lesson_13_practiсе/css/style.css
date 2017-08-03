@@ -1,0 +1,41 @@
+/* Colors */
+/* basic settings */
+html {
+  font-size: 10px;
+}
+.button {
+  background-color: #fcb303;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+}
+/* Typography */
+section {
+  padding: 10rem 0;
+}
+/* main */
+main {
+  padding: 3rem;
+}
+.header {
+  height: 7rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+.phone-link {
+  display: inline-block;
+  color: #1a1820;
+  font-weight: 900;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+}
