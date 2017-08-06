@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Всплывающие окна</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <div class="container text-center">			
+			<section class="color">
+				<p>					
+					<button class="btn-1 btn-1a icon-remove" data-toggle="modal" data-target="#my-modal"><span>Delete</span></button>					
+				</p>				
+			</section>
+		</div>	
+
+		<div class="modal fade" id="my-modal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Внимеание!!!</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Вы действительно хотите удалить этот файл?</p>
+		      </div>
+		      <div class="modal-footer ">
+		        <button type="button" class="btn btn-success" data-dismiss="modal">ДА</button>
+		        <button type="button" class="btn btn-danger">НЕТ</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
