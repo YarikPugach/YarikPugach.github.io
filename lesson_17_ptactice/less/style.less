@@ -1,0 +1,323 @@
+/* fonts family */
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('..//fonts/ProximaNova-Bold.eot');
+	src: url('..//fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('..//fonts/ProximaNova-Bold.woff2') format('woff2'),
+		url('..//fonts/ProximaNova-Bold.woff') format('woff'),
+		url('..//fonts/ProximaNova-Bold.ttf') format('truetype'),
+		url('..//fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova_reg';
+	src: url('..//fonts/ProximaNova-Regular.eot');
+	src: url('..//fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('..//fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('..//fonts/ProximaNova-Regular.woff') format('woff'),
+		url('..//fonts/ProximaNova-Regular.ttf') format('truetype'),
+		url('..//fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.reg() {
+	font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold() {
+	font-family: 'ProximaNovaBold';
+}
+
+/* Colors */
+@btn-color: #fcb303;
+@icon-color: #46b714;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #dddddd;
+
+
+/* basic settings */
+html {
+	font-size: 10px;
+}
+body {
+	.reg();
+}
+a:hover {
+	text-decoration: none;
+}
+button, input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+.button {	
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: @btn-color;
+	color: @light;
+	text-transform: uppercase;
+	border: none;
+	transition: all 0.2s;
+	&:hover {
+		cursor: pointer;
+		background-color: darken(@btn-color,5%);
+	}
+}
+
+/* Typography */
+section {
+	padding: 10rem 0;
+}
+.section-header {
+	margin: 2rem 0 10rem;
+	.bold();
+	font-size: 3.6rem;
+	text-align: center;
+
+}
+
+
+/* main */
+.main {
+	padding: 3rem 0 5rem;
+	background: url(../img/main-bg.jpg) center center no-repeat;
+	background-size: cover;
+	&-content {
+		margin-top: 10rem;
+		/*Главный заголовок*/		
+		h1 {
+			margin-top: 0;
+			margin-bottom: 4rem;
+			line-height: 1.45;
+			.bold();
+			text-transform: uppercase;
+			font-size: 4rem;
+		}
+	}
+	/*Подзаголовок*/
+	&-subtitle {
+		margin-bottom: 4rem;
+		font-size: 2.4rem;
+	}
+	/*Зеленый ярлык*/
+	span {
+		display: inline-block;
+		padding: 3rem 5rem;
+		font-size: 1.8em;
+		color: @light;
+		background-color: @icon-color;
+		text-align: center;
+		/*Цифра "300" рублей*/
+		strong {
+			font-size: 3rem;
+			.bold();
+		}
+	}
+	/*оплата по факту*/
+	&-trigger {
+		display: block;
+		margin-top: 3rem;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		.bold();
+	}
+	/*Главная форма*/
+	&-form {
+		padding: 4rem 5rem;
+		background-color: @light;
+		text-align: center;
+		/*Заголовок формы*/
+		&-header {
+			margin-bottom: 4rem;
+			font-size: 1.8rem;
+			strong {
+				font-size: 1.9rem;
+			}
+		}
+		/*поле для ввода*/
+		&-input {
+			display: block;
+			margin: 2rem 0;
+			width: 100%;
+			padding: 1.5rem;
+			border: 1px solid @border-input;
+			border-radius: 5px;
+		}
+		/*подписи к полям*/
+		label {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			padding: 0.5rem;
+			font-size: 1.3rem;
+			background-color: @light;
+		}
+		/*Подпись под кнопкой*/
+		&-btn {
+			display: block;
+			width: 100%;
+			height: 5.5rem;
+			font-size: 1.6rem;
+		}
+		/*Подпись под кнопкой*/
+		small {
+			display: block;
+			margin-top: 1.5rem;
+		}
+
+	}
+}
+.header {
+	height: 7rem;
+}
+.wrap {
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-block {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+	}
+}
+.phone {
+	&-block {
+		text-align: right;
+	}
+	&-link {
+		display: inline-block;
+		.bold();
+		font-size: 2rem;
+		height: 7rem;
+		line-height: 7rem;
+		color: @text;
+	}
+}
+
+/* Оформление секции с преимуществами */
+.features {
+	&-block {
+		h3 {
+			.bold();
+			font-size: 2rem;
+			margin-bottom: 3rem;
+		}
+		p {
+			display: inline-block;
+			width: 80%;
+			font-size: 1.4rem;
+		}
+		text-align: center;
+	}
+	&-img  {
+		height: 8rem;
+		margin-bottom: 3rem;
+		img {
+		display: block;
+		margin: 0 auto;
+		}
+	}
+}
+.slick-active {
+	outline: none;
+}
+
+.arrow {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	background-size: 70%;
+}
+.prev {
+	left: 0;
+	background: url(../img/left-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+.next {
+	right: 0;
+	background: url(../img/right-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+
+/* Оформление модальных окон */
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	&-content {
+		position: fixed;
+		left: 50%;
+		top: 10%;
+		background-color: @light;
+		transform: translateX(-50%); 	
+		padding: 4rem 6rem;
+	}	
+	&-form {
+		margin-top: 3rem;
+		padding: 0;
+	}
+	&-close {
+		position: absolute;
+		top: -1.5rem;
+		right: -2rem;
+		width: 2rem;
+		text-align: center;
+		border: none;
+		background-color: transparent;
+		font-size: 3rem;
+		color: @light;
+	}
+	&-content {
+		text-align: center;
+	}
+	&-header {
+		.bold();
+	}
+}
+
+
+
+@media (max-width: 991px) {
+	.phone-block {
+		text-align: center;
+	}
+	.main {
+		background-position: center right;
+	}
+	.main-content {
+		margin-top: 3rem;
+	}
+	.main-title {
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.main {
+		background-position: top left;
+			}
+	.header {
+		text-align: center;
+	}
+	.wrap-block {
+		text-align: center;
+	}
+}
