@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Myriad Pro', sans-serif;
+	background-image: url(../img/bg.jpg);
+}
+
+.container {
+	display: none;
+	width: 629px;
+	margin: 20px auto;
+	ul {
+		font-size: 22px;
+		height: 38px;		
+		border-bottom: none;
+	}
+	li:first-child {
+		margin-left: 27px;
+	}
+	li {
+		margin-left: 5px;
+	}
+	.tab-content {
+		width: 629px;
+		height: 410px;
+		border: 24px solid #00a6db;
+		border-radius: 1%;
+		background: #000;
+		form {
+			position: relative;
+			height: 100%;			
+			padding-left: 43px;
+			margin-top: 71px;			
+			input[type="text"] {
+				font-size: 22px;
+				display: block;
+				width: 480px;
+				height: 60px;
+				padding-left: 21px;
+				background-color: #131212;
+				color: #fff;
+				margin-top: 30px;
+				border: none;
+				outline: none;
+				&::placeholder {
+					color: #fff;
+				}
+			}
+			p {
+				margin-top: 15px;
+				padding-left: 23px;
+				color: #c51f03;
+			}
+			input[type="checkbox"] {
+				margin-left: 23px;
+				color: #6f6d6d;
+				margin-top: 46px;
+				margin-right: 4px;
+				
+			}
+			label {		
+			font-weight: bold;
+			vertical-align: middle;
+			}
+			button {
+				position: absolute;
+				right: -40px;
+				bottom: -10px;
+				font-size: 22px;
+				background: radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);;
+				color: #fff;
+				border: none;
+				outline: none;
+				padding: 10px 30px 7px 25px;
+			}
+			.triangle {
+				position: absolute;
+				right: -40px;
+				bottom: -25px;
+				border: 8px solid transparent;
+				border-left: 8px solid #7f0501;
+				border-top: 8px solid #7f0501;
+			}
+		}
+	}
+}
+
+
+.nav-tabs > li > a {
+	background-color: #fff;
+	padding: 3px 15px 2px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #00a6db;
+    border: 1px solid #00a6db;
+    border-bottom-color: transparent;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+}
+.box {
+	.btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+		font-size: 20px;
+		border: 1px solid blue;
+		outline: none;
+		background-color: lightblue;
+		color: blue;
+		&:active {
+			top: 51%;
+		}
+	}
+}
