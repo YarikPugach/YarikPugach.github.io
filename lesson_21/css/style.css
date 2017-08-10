@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+section {
+	position: relative;
+	display: table;
+	min-height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+.box {
+	display: table-cell;
+	vertical-align: middle;
+}
+.img-2 {
+	position: absolute;
+	top: 160px;
+	left: 45%;
+	z-index: -1;
+}
+.img-3 {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+span {
+	font-size: 40px;
+}
+.img-4 {
+	width: 100%;
+}
