@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;	
+}
+.map {
+	background:transparent; 
+	position:relative; 
+	width: 100%;
+	height: 430px;
+	top: 430px;
+	margin-top:-430px;
+}
+.container {
+	width: 940px;
+}
+
+.contacts {
+  position: absolute; 
+  top: -435px;
+  z-index :2;
+	color: #fff;
+	padding: 40px 60px;
+	height: 430px;
+	text-align: center;
+	background-color: #c60b0b;	
+	h2 {
+		margin: 0;
+		font-size: 30px;
+	}	
+	p {
+		font-size: 18px;
+		line-height: 1.6;
+		a {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+}
+.footer {
+	margin-top: 20px;
+	.media-body {
+		p {
+			text-transform: capitalize;
+		}
+	}		
+	.center {
+		text-align: center;
+	}
+	.center::before {
+	  content: "";
+	  display: inline-block;
+	  vertical-align: middle;
+  }
+  strong {
+  	display: block;
+  	font-size: 22px;
+  }
+}
+
