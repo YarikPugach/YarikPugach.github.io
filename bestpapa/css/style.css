@@ -1,0 +1,736 @@
+/* fonts family */
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url('..//fonts/MuseoSansCyrl-300.eot');
+  src: url('..//fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), url('..//fonts/MuseoSansCyrl-300.woff2') format('woff2'), url('..//fonts/MuseoSansCyrl-300.woff') format('woff'), url('..//fonts/MuseoSansCyrl-300.ttf') format('truetype'), url('..//fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: url('..//fonts/MuseoSansCyrl-500.eot');
+  src: url('..//fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'), url('..//fonts/MuseoSansCyrl-500.woff2') format('woff2'), url('..//fonts/MuseoSansCyrl-500.woff') format('woff'), url('..//fonts/MuseoSansCyrl-500.ttf') format('truetype'), url('..//fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url('..//fonts/MuseoSansCyrl-700.eot');
+  src: url('..//fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), url('..//fonts/MuseoSansCyrl-700.woff2') format('woff2'), url('..//fonts/MuseoSansCyrl-700.woff') format('woff'), url('..//fonts/MuseoSansCyrl-700.ttf') format('truetype'), url('..//fonts/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+/* colors */
+/* basic settings */
+html {
+  font-size: 10px;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+body {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  color: #1b1b1b;
+}
+/* Typography */
+.section-header {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 7.5rem;
+}
+/* Оформление формы которая повторяется постоянно */
+.callback h3 {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+.callback p {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.callback .form {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+.callback .form input {
+  height: 4rem;
+  width: 30rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  border: 2px solid #e8e8e8;
+  color: #d0d0d0;
+}
+.callback .form input[placeholder] {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.6rem;
+}
+.callback .form .name {
+  background: url(../img/form/user.svg) center right 2rem no-repeat;
+  background-size: 8%;
+}
+.callback .form .phone {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background: url(../img/form/phone.svg) center right 2rem no-repeat;
+  background-size: 8%;
+}
+.callback .form button {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  height: 4rem;
+  width: 30rem;
+  border: none;
+  background-color: #5ba2a9;
+  color: #ffffff;
+}
+.callback .form button:hover {
+  background-color: #488389;
+}
+/* Главный экран */
+.main {
+  background: #ffffff url(../img/main/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+  /* Логотип и номер телефона */
+  /* Заголовок */
+  /* Иконки и слайдер для маленьких экранов */
+}
+.main .header {
+  padding-top: 5rem;
+  color: #ffffff;
+}
+.main .logo {
+  width: 22rem;
+  border: 2px solid #ffffff;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.main .logo img {
+  vertical-align: middle;
+}
+.main .logo h6 {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  display: inline-block;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+}
+.main .phone-block {
+  text-align: right;
+}
+.main .phone-block .phone-number {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2.4rem;
+}
+.main .phone-block a {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.main .phone-block a:hover {
+  color: #5ba2a9;
+  text-decoration: none;
+  border-bottom: 1px solid #5ba2a9;
+}
+.main-header {
+  margin-top: 15rem;
+  text-align: center;
+  color: #ffffff;
+  /* Кнопка */
+}
+.main-header h1 {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 5.5rem;
+}
+.main-header span {
+  display: block;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 3.3rem;
+  line-height: 1.8;
+}
+.main-header-btn {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 15rem;
+  padding: 1.5rem 7.8rem;
+  background: none;
+  color: #ffffff;
+}
+.main-header-btn:hover {
+  background: #ffffff;
+  color: #1b1b1b;
+}
+.main-slider {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+.main-slider-block {
+  display: inline-block;
+  width: 19%;
+}
+.main-slider-block p {
+  text-align: center;
+  color: #ffffff;
+}
+.main-slider-img {
+  height: 6rem;
+}
+.main-slider-img img {
+  width: 5rem;
+  display: block;
+  margin: 0 auto;
+}
+/* Настройка слайдера на главном экране */
+.slick-active {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  translate: scaleY(-50%);
+  z-index: 99;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+.prev {
+  left: 0;
+  background: url(../img/main/prevArrow.svg) center no-repeat;
+  background-size: 60%;
+}
+.next {
+  right: 0;
+  background: url(../img/main/nextArrow.svg) center no-repeat;
+  background-size: 60%;
+}
+/* Это незабываемое событие */
+.event .section-header:before {
+  content: "\2013  " url(../img/event/heart.png) "  \2013";
+  color: #5ba2a9;
+}
+/* Оформление секции  offer */
+.offer {
+  background: #e6f7f8;
+  text-align: center;
+  padding-top: 1rem;
+}
+.offer .section-header:before {
+  content: "\2013  " url(../img/offer/star.png) "  \2013";
+  color: #5ba2a9;
+}
+.offer-block {
+  text-align: center;
+}
+.offer-block p {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.6rem;
+}
+.offer-block:nth-child(-n+3) {
+  margin-bottom: 9rem;
+}
+.offer-img {
+  height: 8rem;
+}
+.offer-img img {
+  width: 6rem;
+  display: block;
+  margin: 0 auto;
+}
+/* Оформление болка "Стоимость наших услуг" */
+.price {
+  text-align: center;
+}
+.price .section-header:before {
+  content: "\2013  " url(../img/price/money.png) "  \2013";
+  color: #5ba2a9;
+}
+.price-block {
+  border: 1px solid #e8e8e8;
+  padding: 5rem 5rem 5rem;
+  margin-bottom: 3rem;
+}
+.price-block h3 {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.price-block span {
+  color: #5ba2a9;
+  font-size: 1.8rem;
+}
+.price-block span strong {
+  font-size: 4.8rem;
+}
+.price-block p {
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+}
+.price-block:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.17);
+          box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.17);
+}
+.price-block:hover .price-btn {
+  background-color: #5ba2a9;
+  color: #ffffff;
+  border-color: #5ba2a9;
+}
+.price-btn {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: 2px solid #e8e8e8;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  color: #5a5a5a;
+  background: transparent;
+}
+.price-btn:hover {
+  background-color: #488389 !important;
+}
+/* Наши преимущества */
+.features {
+  background: #e6f7f8;
+  text-align: center;
+  padding-top: 1rem;
+}
+.features .section-header:before {
+  content: "\2013  " url(../img/features/photos.png) "  \2013";
+  color: #5ba2a9;
+}
+.features-block {
+  text-align: center;
+}
+.features-block p {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 90%;
+}
+.features-block:nth-child(-n+3) {
+  margin-bottom: 5rem;
+}
+.features-img {
+  height: 20rem;
+}
+.features-img img {
+  width: 18rem;
+  display: block;
+  margin: 0 auto;
+}
+/* Оформление Отзывы о нас, feedback */
+.feedback {
+  background: #5ba2a9 url(../img/feedback/feedback-bg.png) center no-repeat;
+  background-size: cover;
+}
+.feedback .section-header:before {
+  content: "\2013  " url(../img/feedback/talk.png) "  \2013";
+  color: #5ba2a9;
+}
+.feedback-wrap {
+  position: relative;
+  text-align: right;
+}
+.feedback-wrap-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.feedback-wrap-block {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  padding: 10rem 8rem 12rem 15rem;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.feedback-wrap-block h4 {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2rem;
+}
+.feedback-wrap-block p {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.8rem;
+}
+.feedback-wrap-text {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+.feedback .my-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+  text-align: right;
+  padding-right: 3rem;
+}
+.feedback .my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.4rem;
+  cursor: pointer;
+}
+.feedback .my-dots li button {
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.feedback .my-dots li button:hover,
+.feedback .my-dots li button:focus {
+  outline: none;
+}
+.feedback .my-dots li button:before {
+  content: url(../img/feedback/dots.svg);
+}
+.feedback .my-dots li.slick-active button:before {
+  content: url(../img/feedback/dots-active.svg);
+}
+/* Оформление галереи, gallery */
+.gallery {
+  margin: auto;
+  background-color: #e6f7f8;
+  padding-bottom: 8rem;
+}
+.gallery .section-header:before {
+  content: "\2013  " url(../img/gallery/gallery.png) "  \2013";
+  color: #5ba2a9;
+}
+.gallery-item {
+  position: relative;
+  margin-top: 2rem;
+}
+.gallery-item:hover .gallery-wrap {
+  display: block;
+}
+.gallery-item a {
+  color: #ffffff;
+}
+.gallery-item .gallery-wrap {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #000;
+  opacity: 0.7;
+}
+.gallery-item .gallery-wrap .wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.gallery-item .gallery-wrap .wrap .wrap-sell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.gallery-item .gallery-wrap .wrap .wrap-sell p {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 1.6rem;
+  line-height: 3;
+}
+.gallery-item .gallery-wrap .wrap .wrap-sell .date {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.2rem;
+  line-height: 4;
+}
+/* Оформление Footer  */
+.footer {
+  background-color: #222222;
+  padding-bottom: 2rem;
+}
+.footer .header {
+  margin-top: 3rem;
+  color: #ffffff;
+}
+.footer .logo {
+  width: 22rem;
+  border: 2px solid #ffffff;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.footer .logo img {
+  vertical-align: middle;
+}
+.footer .logo h6 {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  display: inline-block;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-block .phone-number {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2.4rem;
+}
+.phone-block a {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.phone-block a:hover {
+  color: #5ba2a9;
+  text-decoration: none;
+  border-bottom: 1px solid #5ba2a9;
+}
+/* Оформление модальных окон */
+.popup,
+.popup-thx {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content,
+.popup-thx-content {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  width: 40%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 0rem;
+}
+.popup .form,
+.popup-thx .form {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+.popup .form input,
+.popup-thx .form input {
+  height: 4rem;
+  width: 70%;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  border: 2px solid #e8e8e8;
+  color: #d0d0d0;
+}
+.popup .form input[placeholder],
+.popup-thx .form input[placeholder] {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 1.6rem;
+}
+.popup .form .name,
+.popup-thx .form .name {
+  background: url(../img/form/user.svg) center right 2rem no-repeat;
+  background-size: 8%;
+}
+.popup .form .phone,
+.popup-thx .form .phone {
+  margin: 2rem 0;
+  background: url(../img/form/phone.svg) center right 2rem no-repeat;
+  background-size: 8%;
+}
+.popup .form .email,
+.popup-thx .form .email {
+  margin-bottom: 2rem;
+  background: url(../img/email.svg) center right 2rem no-repeat;
+  background-size: 8%;
+}
+.popup .form textarea,
+.popup-thx .form textarea {
+  min-width: 70%;
+  max-width: 70%;
+}
+.popup .form textarea[placeholder],
+.popup-thx .form textarea[placeholder] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.popup .form button,
+.popup-thx .form button {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  height: 4rem;
+  width: 70%;
+  border: none;
+  margin-top: 1rem;
+  background-color: #5ba2a9;
+  color: #ffffff;
+}
+.popup .form button:hover,
+.popup-thx .form button:hover {
+  background-color: #488389;
+}
+.popup-close,
+.popup-thx-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #5ba2a9;
+}
+.popup-close:hover,
+.popup-thx-close:hover {
+  color: #366368;
+}
+.popup-content,
+.popup-thx-content {
+  text-align: center;
+}
+.popup-header,
+.popup-thx-header {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 2rem;
+}
+/* Адаптив */
+@media (max-width: 991px) {
+  .callback .form .name {
+    display: block;
+    margin: 1rem auto;
+  }
+  .callback .form .phone {
+    display: block;
+    margin: 1rem auto 2rem;
+  }
+  .callback .button {
+    margin-right: 0;
+  }
+  .price {
+    padding-bottom: 5rem;
+  }
+  .price-block {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 2rem;
+    padding: 5rem 2rem 5rem;
+  }
+  .features-block p {
+    width: 50%;
+  }
+  .feedback-wrap {
+    position: relative;
+    text-align: right;
+  }
+  .feedback-wrap-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .feedback-wrap-block {
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    padding: 8rem 5rem 10rem 20rem;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  .feedback-wrap-text {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+  }
+  .gallery {
+    text-align: center;
+  }
+  .gallery-item:hover .gallery-wrap {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .main-header,
+  .footer-header {
+    margin-top: 5rem;
+  }
+  .main .logo,
+  .footer .logo {
+    margin: 0 auto;
+  }
+  .main .phone-block,
+  .footer .phone-block {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .feedback-wrap {
+    position: relative;
+    text-align: right;
+  }
+  .feedback-wrap-img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-27%);
+            transform: translateX(-27%);
+    margin-top: 2rem;
+  }
+  .feedback-wrap-img img {
+    width: 50%;
+  }
+  .feedback-wrap-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15rem 5rem 10rem 4rem;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  .feedback-wrap-block h4 {
+    text-align: center;
+  }
+  .feedback-wrap-text {
+    position: absolute;
+    top: 95%;
+    right: 90%;
+  }
+  .gallery-hidden {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .gallery-hidden {
+    display: none;
+  }
+  .popup-content {
+    width: 80%;
+  }
+}
