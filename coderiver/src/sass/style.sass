@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700')
+
+/* Colors */
+$main-txt: #333743
+$txt: #9297a3
+$title-link: #9fcede
+
+
+@mixin font_PTSans
+	font-family: 'PT Sans Narrow', sans-serif
+	font-weight: 700
+	font-size: 16px
+	color: $main-txt
+
+@mixin font_Georgia
+	font-family: Georgia, sans-serif
+	font-weight: 400
+	font-size: 12px
+	color: $txt
+
+// *
+// 	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	@include font_PTSans
+
+
+a
+	text-decoration: none
+	color: $txt
+	&:active, &:hover
+		color: $main-txt
+
+/* .wrapp
+	max-width: 1440px
+	margin: 0 auto
+ */
+section
+	max-width: 1440px
+	margin: 0 auto
+.btn-mobile
+	display: none
+/* header */
+.header
+	display: flex
+	flex-wrap: wrap
+	align-items: center	
+	padding: 0 40px
+	box-shadow: 0 2px 9px rgba(189, 189, 189, 0.5)
+
+	&__logo
+		margin-right: 70px
+		padding-top: 20px
+		padding-bottom: 20px
+
+	&__nav
+		list-style: none
+		padding: 0
+		li
+			display: inline-block
+			margin-right: 57px
+			a
+				text-transform: uppercase
+
+	&__bag
+		flex-grow: 1
+		text-align: right
+		padding-right: 30px
+		border-right: 1px solid #dedede
+		line-height: 44px 
+		span
+			@include font_Georgia
+			display: inline-block
+			width: 16px
+			height: 16px
+			margin-left: 13px
+			line-height: 15px
+			border-radius: 50%
+			text-align: center
+			background-color: #333743
+			color: #fff
+
+	&__form
+		margin-left: 37px
+		&-login
+			padding-right: 19px
+			border-right: 2px solid #000
+		&-sign
+			padding-left: 17px
+/* End header */
+
+/* begin content*/
+.content
+	display: flex
+	flex-wrap: wrap
+	&__photo
+		display: flex
+		&-nav
+			list-style: none
+			margin-right: 10px
+			margin-top: 50px
+			li.select
+				// line-height: 0px
+				// margin-bottom: 10px 
+				border-right: 3px solid #dedede
+		&-panels
+			margin-top: 50px
+
+	&__description
+		max-width: 500px
+		margin: 0 auto
+		text-align: center
+		margin-top: 50px
+		padding-left: 20px
+		padding-right: 20px
+		&-link
+			@include font_Georgia
+			color: $title-link
+		&-title
+			text-transform: uppercase
+			margin-bottom: 62px
+		&-price
+			@include font_Georgia
+			font-size: 22px
+		&-subtitle
+			margin-top: 62px
+			padding-bottom: 6px
+			border-bottom: 1px solid #dbdee5
+		&-description
+			@include font_Georgia
+		&-colors
+			max-width: 150px
+			text-align: left
+			padding-bottom: 6px
+			border-bottom: 1px solid #dbdee5
+			margin-top: 70px
+		fieldset
+			border: none
+			text-align: left
+			padding: 0
+			margin: 0
+			input[type="radio"]
+				appearance: none
+				border: 1px solid #9297a3
+				outline: none
+				height: 12px
+				width: 12px
+				border-radius: 50%
+				background-color: #fff
+				cursor: pointer
+				position: relative
+				&:hover
+					background-color: #9297a3
+				&:checked					
+					border: 1px solid #000
+					background-color: #000
+				&:checked::before
+					content: '✔'
+					position: absolute
+					height: 12px
+					width: 12px
+					line-height: 12px
+					color: #fff
+		label
+			cursor: pointer
+			span
+				display: inline-block
+				width: 12px
+				height: 12px
+				margin-right: 10px
+
+			.square-blue
+				background-color: $title-link
+			.square-brown
+				background-color: #333743
+		button
+			outline: none
+			border: none		
+			@include font_Georgia
+			font-size: 13px
+			color: #fff			
+			width: 100%
+			border-radius: 2px
+			background-color: #afa394
+			cursor: pointer
+			padding-top: 20px
+			padding-bottom: 15px
+			margin-top: 70px
+			&:hover
+				background-color: darken(#afa394, 15%)
+
+/* end content*/
+
+/* begin product */
+.product
+	padding-left: 40px
+	padding-right: 40px
+	margin-top: 117px
+	margin-bottom: 50px
+	&__title
+		font-size: 16px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 22px
+		small
+			@include font_Georgia
+			display: block
+			text-transform: none
+	&__items
+		display: grid
+		grid-template-columns: repeat(auto-fill, min(230px))
+		grid-gap: 20px
+		justify-content: space-around
+		.photo
+			width: 240px
+			height: 255px
+			line-height: 460px
+			background-color: #f5f5f5
+			text-align: center
+		&-item
+			h4
+				display: flex
+				justify-content: space-between
+				text-transform: uppercase
+				line-height: 0
+				padding-left: 15px
+				margin: 20px 0 5px 0	
+				max-width: 210px			
+			span
+				@include font_Georgia
+				padding-left: 15px
+/* end product */
+
+
+
+@media only screen and (max-width: 1139px)
+
+	.content
+		justify-content: center
+
+
+
+@media only screen and (max-width: 899px)
+
+	.header
+		&__logo
+			margin-right: 10px
+		&__nav
+			order: 1
+			display: block
+			width: 100%
+			text-align: center
+			li
+				margin-right: 9%
+				&:last-child
+					// margin-right: 0
+		&__bag
+			border: none
+			padding-right: 0
+
+
+
+
+@media only screen and (max-width: 599px)
+	
+	.content
+		&__photo
+			&-nav
+				li
+					a
+						>img
+							max-width: 50px
+			&-panels
+				>div
+					>img
+						max-width: 200px
+
+
+@media only screen and (max-width: 500px)
+	
+	.header
+		&__nav
+			display: none
+			li
+				display: block
+				width: 100%
+				margin-bottom: 5px
+				margin: 0 auto
+				transition: all 0.3s
+				&:hover
+					background-color: #000
+		&__form
+			margin: auto
+			&-login
+				padding-right: 5px
+			&-sign
+				padding-left: 5px
+		&__bag
+			flex-grow: 0
+
+	.btn-mobile
+		@include font_PTSans
+		display: block
+		background-color: transparent
+		outline: none
+		border: 2px solid $main-txt
+		border-radius: 5px
+		margin-left: 10px
+		cursor: pointer
+				
