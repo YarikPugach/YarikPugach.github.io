@@ -1,0 +1,38 @@
+.product
+	padding-left: 40px
+	padding-right: 40px
+	margin-top: 117px
+	margin-bottom: 50px
+	&__title
+		font-size: 16px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 22px
+		small
+			+font_Georgia
+			display: block
+			text-transform: none
+	&__items
+		display: grid
+		grid-template-columns: repeat(auto-fill, min(230px))
+		grid-gap: 20px
+		justify-content: space-around
+		.photo
+			width: 240px
+			height: 255px
+			line-height: 460px
+			background-color: #f5f5f5
+			text-align: center
+		&-item
+			h4
+				display: flex
+				justify-content: space-between
+				text-transform: uppercase
+				line-height: 0
+				padding-left: 15px
+				margin: 20px 0 5px 0	
+				max-width: 210px			
+			span
+				+font_Georgia
+				padding-left: 15px
+/* end product */

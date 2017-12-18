@@ -1,0 +1,114 @@
+.content
+	display: flex
+	flex-wrap: wrap
+	+r(1139)
+		justify-content: center
+	&__photo
+		display: flex
+		&-nav
+			list-style: none
+			margin-right: 10px
+			margin-top: 50px
+			li.select
+				// line-height: 0px
+				// margin-bottom: 10px 
+				border-right: 3px solid #dedede
+			+r(599)
+				a
+					>img
+						min-width: 50px
+		&-panels
+			margin-top: 50px
+			+r(599)
+				>div
+					>img
+						max-width: 200px
+
+	&__description
+		max-width: 500px
+		margin: 0 auto
+		text-align: center
+		margin-top: 50px
+		padding-left: 20px
+		padding-right: 20px
+		&-link
+			+font_Georgia
+			color: $title-link
+		&-title
+			text-transform: uppercase
+			margin-bottom: 62px
+		&-price
+			+font_Georgia
+			font-size: 22px
+		&-subtitle
+			margin-top: 62px
+			padding-bottom: 6px
+			border-bottom: 1px solid #dbdee5
+		&-description
+			+font_Georgia
+			margin-top: 22px
+		&-colors
+			max-width: 150px
+			text-align: left
+			padding-bottom: 6px
+			border-bottom: 1px solid #dbdee5
+			margin-top: 70px
+		fieldset
+			border: none
+			text-align: left
+			padding: 0
+			margin: 0px
+			input[type="radio"]
+				appearance: none
+				border: 1px solid #9297a3
+				outline: none
+				height: 12px
+				width: 12px
+				border-radius: 50%
+				background-color: #fff
+				margin-left: -25px
+				margin-right: 10px
+				cursor: pointer
+				position: relative
+				&:hover
+					background-color: #9297a3
+				&:checked					
+					border: 1px solid #000
+					background-color: #000
+				&:checked::before
+					content: '✔'
+					position: absolute
+					height: 12px
+					width: 12px
+					line-height: 12px
+					color: #fff
+		label
+			cursor: pointer
+			span
+				display: inline-block
+				width: 12px
+				height: 12px
+				margin-right: 10px
+
+			.square-blue
+				background-color: $title-link
+				padding-right: 10px
+			.square-brown
+				background-color: #333743
+		button
+			outline: none
+			border: none		
+			+font_Georgia
+			font-size: 13px
+			color: #fff			
+			width: 100%
+			border-radius: 2px
+			background-color: #afa394
+			cursor: pointer
+			padding-top: 20px
+			padding-bottom: 15px
+			margin-top: 70px
+			&:hover
+				background-color: darken(#afa394, 15%)
+
+/* end content*/

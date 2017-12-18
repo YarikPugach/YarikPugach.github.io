@@ -1,0 +1,90 @@
+.header
+	display: flex
+	flex-wrap: wrap
+	align-items: center	
+	padding: 0 40px
+	box-shadow: 0 12px 9px -10px rgba(189, 189, 189, 0.5)
+	// box-shadow: 0 5px 5px -5px #333
+	+r(500)
+		padding: 0 20px
+	&__logo
+		margin-right: 70px
+		padding-top: 20px
+		padding-bottom: 20px
+		+r(899)
+			margin-right: 10px
+
+	&__nav
+		list-style: none
+		padding: 0
+		+r(899)
+			order: 1
+			display: block
+			width: 100%
+			text-align: center
+		+r(500)
+			display: none
+		li
+			display: inline-block
+			margin-right: 57px
+			+r(899)
+				margin-right: 9%
+				&:last-child
+			+r(500)
+				display: block
+				width: 100%
+				margin-bottom: 5px
+				margin: 0 auto
+				transition: all 0.3s
+				&:hover
+					background-color: #000
+			a
+				text-transform: uppercase
+
+	&__bag
+		flex-grow: 1
+		text-align: right
+		padding-right: 30px
+		border-right: 1px solid #dedede
+		line-height: 44px
+		+r(899)
+			border: none
+			padding-right: 0
+		+r(500)
+			flex-grow: 0
+		span
+			@include font_Georgia
+			display: inline-block
+			width: 16px
+			height: 16px
+			margin-left: 13px
+			line-height: 15px
+			border-radius: 50%
+			text-align: center
+			background-color: #333743
+			color: #fff
+
+	&__form
+		margin-left: 37px
+		+r(500)
+			margin: auto
+		&-login
+			padding-right: 19px
+			border-right: 2px solid #000
+			+r(500)
+				padding-right: 5px
+		&-sign
+			padding-left: 17px
+			+r(500)
+				padding-left: 5px
+	+r(500)
+		.btn-mobile
+			display: block
+			background-color: transparent
+			outline: none
+			padding: 5px 10px
+			border: 2px solid $main-txt
+			border-radius: 5px
+			margin-left: 5px
+			cursor: pointer
+/* End header */

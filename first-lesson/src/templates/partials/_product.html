@@ -1,0 +1,17 @@
+<section class="product">
+
+	<h2 class="product__title"><small>We thought</small>You might likethese too...</h2>
+
+	<div class="product__items">
+	{% import "data/data.html" as items %}	
+	{% for item in items.item %}
+		<div class="product__items-item">
+			<div class="photo">
+				<img src="img/{{item.img}}.png" alt="{{img}}">
+			</div>
+			<h4>{{item.title}}<span>${{item.price}}</span></h4>
+			<span>{{item.category}}</span>
+		</div>
+	{% endfor %}
+	</div>
+</section>

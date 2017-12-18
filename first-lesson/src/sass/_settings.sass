@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700')
+
+/* Colors */
+$main-txt: #333743
+$txt: #9297a3
+$title-link: #9fcede
+
+
+=font_PTSans
+	font-family: 'PT Sans Narrow', sans-serif
+	font-weight: 700
+	font-size: 16px
+	color: $main-txt
+
+=font_Georgia
+	font-family: Georgia, sans-serif
+	font-weight: 400
+	font-size: 12px
+	color: $txt
+
+
+
+body
+	padding: 0
+	margin: 0
+	+font_PTSans
+
+
+a
+	text-decoration: none
+	color: $txt
+	&:active, &:hover
+		color: $main-txt
+
+/* .wrapp
+	max-width: 1440px
+	margin: 0 auto
+ */
+section
+	max-width: 1440px
+	margin: 0 auto
+	padding: 0 40px
+.btn-mobile
+	display: none
